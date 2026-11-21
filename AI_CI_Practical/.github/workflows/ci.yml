@@ -15,4 +15,5 @@ jobs:
         with:
           python-version: "3.11"
       - name: Run application tests
+        working-directory: AI_CI_Practical/py
         run: python -m unittest -v
