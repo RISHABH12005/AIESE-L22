@@ -18,7 +18,7 @@ git push -u origin main
 git push
 ```
 
-# AI to Analyse the Failure
+# AI to Analyse the Failure  
 
 ```text
 test_calculate_discount (test_app.TestApplication.test_calculate_discount) ... ok
@@ -88,32 +88,32 @@ Error: Process completed with exit code 1.
 
 # Questions for Viva / Reflection
 
-1. **What is Continuous Integration?**
+1. **What is Continuous Integration?**  
    Continuous Integration is the practice of frequently merging code into a shared repository and automatically building and testing each change.
 
-2. **What is the purpose of a unit test?**
+2. **What is the purpose of a unit test?**  
    A unit test checks one small piece of code independently, such as a function or method, to verify that it produces the expected result.
 
-3. **What is the role of Git in this practical?**
+3. **What is the role of Git in this practical?**  
    Git tracks source-file changes, records commits, manages history, and pushes the project to GitHub.
 
-4. **What is the difference between Git and GitHub?**
+4. **What is the difference between Git and GitHub?**  
    Git is the local or distributed version-control system. GitHub is an online hosting platform for Git repositories that also provides collaboration and automation tools.
 
-5. **What event triggers the workflow in this practical?**
+5. **What event triggers the workflow in this practical?**  
    Pushing commits or creating a pull request triggers the workflow, when configured with both `push` and `pull_request` events.
 
-6. **What does the GitHub Actions runner do?**
+6. **What does the GitHub Actions runner do?**  
    The runner is a hosted execution machine that checks out the repository, installs Python, and runs the commands in the workflow.
 
-7. **Why did the test fail when multiplication was changed to addition?**
+7. **Why did the test fail when multiplication was changed to addition?**  
    The test expects a price and quantity to be multiplied. With `100 + 2`, the function returns `102`, while the test expects `200`.
 
-8. **What information in the test output helped identify the problem?**
+8. **What information in the test output helped identify the problem?**  
    The failed test name, the assertion call, and `AssertionError: 102 != 200` identify the function and show the actual and expected values.
 
-9. **How did the AI assistant help? Why should its suggestion still be verified?**
+9. **How did the AI assistant help? Why should its suggestion still be verified?**  
    The AI explains the likely cause and suggests a focused correction. The suggestion must still be checked against the source code and tested locally and in GitHub Actions because AI output can be incomplete or wrong.
 
-10. **Does this practical deploy the application to a live server? Explain your answer.**
+10. **Does this practical deploy the application to a live server? Explain your answer.**  
     No. It demonstrates continuous integration because the workflow checks out and tests the code. Deployment would require separate deployment steps and infrastructure.
