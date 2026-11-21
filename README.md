@@ -1,4 +1,10 @@
-# CMD:
+# AI-Assisted CI/CD Pipeline Failure Analysis 
+In this practical, you will create a small Python application, write automated tests, upload the project to GitHub,
+and configure GitHub Actions to run the tests automatically whenever code is pushed. You will then deliberately
+introduce a bug, observe the failed pipeline, use an AI assistant to understand the failure, correct the bug, and
+verify that the pipeline becomes successful.
+
+## CMD:
 
 ```bash
  py app.py
@@ -18,7 +24,7 @@ git push -u origin main
 git push
 ```
 
-# AI to Analyse the Failure  
+## AI to Analyse the Failure  
 
 ```text
 test_calculate_discount (test_app.TestApplication.test_calculate_discount) ... ok
@@ -74,7 +80,7 @@ Error: Process completed with exit code 1.
 
 **Possible explanation:** The output supports an incorrect calculation in `calculate_total`; source review is needed to confirm the exact line.
 
-# Submission Checklist
+## Submission Checklist
 
 - ✓ Python, VS Code, and Git installed.
 - ✓ `app.py` created and executed successfully.
@@ -86,7 +92,7 @@ Error: Process completed with exit code 1.
 - ✓ AI prompt used to analyse the failure.
 - ✓ Bug corrected and successful GitHub Actions run observed.
 
-# Questions for Viva / Reflection
+## Questions for Viva / Reflection
 
 1. **What is Continuous Integration?**  
    Continuous Integration is the practice of frequently merging code into a shared repository and automatically building and testing each change.
