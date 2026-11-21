@@ -1,5 +1,5 @@
 import unittest
-from app import calculate_total, calculate_discount
+from AIESE.L22.AI_CI_Practical.py.app import calculate_total, calculate_discount
 
 class TestApplication(unittest.TestCase):
     def test_calculate_total(self):

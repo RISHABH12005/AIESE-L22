@@ -1,4 +1,5 @@
 # Prompt:
+
 I am a beginner learning Continuous Integration (CI).  
 My Python unit test failed. Here is the test output:  
 [PASTE THE RELEVANT TEST FAILURE OUTPUT HERE]  
